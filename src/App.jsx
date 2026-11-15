@@ -1077,8 +1077,8 @@ const Bx = z("Youtube", [["path", {
   }]]),
   le = {
     brandName: "SCRUBIE_HUB.PK",
-    whatsappNumber: "923182717949",
-    whatsappDisplayNumber: "+923182717949",
+    whatsappNumber: "923333777204",
+    whatsappDisplayNumber: "+923333777204",
     freeDeliveryThreshold: 2999,
     standardDeliveryFee: 200,
     email: "support@scrubiehub.pk",
