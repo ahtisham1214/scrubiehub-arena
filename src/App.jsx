@@ -1533,9 +1533,9 @@ I am browsing scrubiehub.pk and have questions regarding your skincare items.`)}
     slug: "coffee-body-scrub",
     category: "body-scrubs",
     categoryLabel: "Body Scrubs",
-    price: 1499,
-    originalPrice: 1999,
-    discountPercentage: 25,
+    price: 1250,
+    originalPrice: 1699,
+    discountPercentage: 26,
     rating: 4.8,
     reviewCount: 124,
     shortDescription: "100% handmade exfoliating scrub with organic roasted coffee and nourishing botanicals.",
@@ -1555,9 +1555,9 @@ I am browsing scrubiehub.pk and have questions regarding your skincare items.`)}
     slug: "turmeric-body-scrub",
     category: "body-scrubs",
     categoryLabel: "Body Scrubs",
-    price: 1499,
-    originalPrice: 1899,
-    discountPercentage: 21,
+    price: 1250,
+    originalPrice: 1699,
+    discountPercentage: 26,
     rating: 4.9,
     reviewCount: 98,
     shortDescription: "Skin-brightening organic wild turmeric polish for hyperpigmentation and sun-tan removal.",
@@ -1599,9 +1599,9 @@ I am browsing scrubiehub.pk and have questions regarding your skincare items.`)}
     slug: "rosey-rose-scrub",
     category: "body-scrubs",
     categoryLabel: "Body Scrubs",
-    price: 1499,
-    originalPrice: 1950,
-    discountPercentage: 23,
+    price: 1250,
+    originalPrice: 1699,
+    discountPercentage: 26,
     rating: 4.8,
     reviewCount: 86,
     shortDescription: "Gentle exfoliating rose polish infused with Damask rose water and pink mineral crystals.",
@@ -2467,8 +2467,8 @@ const cc = ["All Skin Types", "Oily Skin", "Dry Skin", "Combination Skin", "Sens
         name: "",
         category: "body-scrubs",
         categoryLabel: "Body Scrubs",
-        price: 1499,
-        originalPrice: 1899,
+        price: 1250,
+        originalPrice: 1699,
         discountPercentage: 20,
         rating: 5,
         reviewCount: 1,
@@ -2578,9 +2578,9 @@ const cc = ["All Skin Types", "Oily Skin", "Dry Skin", "Combination Skin", "Sens
           name: "",
           category: $,
           categoryLabel: se,
-          price: 1499,
-          originalPrice: 1899,
-          discountPercentage: 21,
+          price: 1250,
+          originalPrice: 1699,
+          discountPercentage: 26,
           rating: 5,
           reviewCount: 1,
           shortDescription: "",
@@ -2704,7 +2704,7 @@ const cc = ["All Skin Types", "Oily Skin", "Dry Skin", "Combination Skin", "Sens
                       price: T,
                       discountPercentage: $
                     });
-                  }} placeholder="1499" className="w-full px-3.5 py-2.5 bg-[#FAF7F5] border border-gray-200 rounded-xl text-sm sm:text-xs focus:outline-none focus:border-brand-500 font-medium" /></div><div><label className="block text-xs font-bold text-gray-700 mb-1.5">Original / Strike-through Price (PKR)</label><input type="number" value={v.originalPrice || ""} onChange={p => {
+                  }} placeholder="1250" className="w-full px-3.5 py-2.5 bg-[#FAF7F5] border border-gray-200 rounded-xl text-sm sm:text-xs focus:outline-none focus:border-brand-500 font-medium" /></div><div><label className="block text-xs font-bold text-gray-700 mb-1.5">Original / Strike-through Price (PKR)</label><input type="number" value={v.originalPrice || ""} onChange={p => {
                     const T = Number(p.target.value),
                       M = Number(v.price) || 0,
                       $ = T > M && T > 0 ? Math.round((T - M) / T * 100) : 0;
@@ -2713,7 +2713,7 @@ const cc = ["All Skin Types", "Oily Skin", "Dry Skin", "Combination Skin", "Sens
                       originalPrice: T,
                       discountPercentage: $
                     });
-                  }} placeholder="1899" className="w-full px-3.5 py-2.5 bg-[#FAF7F5] border border-gray-200 rounded-xl text-sm sm:text-xs focus:outline-none focus:border-brand-500 font-medium" /></div><div className="sm:col-span-2"><div className="p-3 bg-pink-50/60 border border-pink-100 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 text-xs"><span className="text-gray-600 font-semibold">Dynamic Discount Badge Preview:</span>{v.originalPrice && Number(v.originalPrice) > Number(v.price) ? <span className="font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-lg border border-emerald-200 shadow-xs self-start sm:self-auto">🔥 -{Math.round((Number(v.originalPrice) - Number(v.price)) / Number(v.originalPrice) * 100)}{"% OFF (Customer saves Rs. "}{(Number(v.originalPrice) - Number(v.price)).toLocaleString()})</span> : <span className="text-gray-400 font-medium">No discount (Selling price ≥ Original price)</span>}</div></div><div className="sm:col-span-2"><label className="block text-xs font-bold text-gray-700 mb-1.5">Suitable Skin Types * (Matches Shop filters)</label><div className="flex flex-wrap gap-1.5 sm:gap-2 pt-1">{cc.map(p => {
+                  }} placeholder="1699" className="w-full px-3.5 py-2.5 bg-[#FAF7F5] border border-gray-200 rounded-xl text-sm sm:text-xs focus:outline-none focus:border-brand-500 font-medium" /></div><div className="sm:col-span-2"><div className="p-3 bg-pink-50/60 border border-pink-100 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 text-xs"><span className="text-gray-600 font-semibold">Dynamic Discount Badge Preview:</span>{v.originalPrice && Number(v.originalPrice) > Number(v.price) ? <span className="font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-lg border border-emerald-200 shadow-xs self-start sm:self-auto">🔥 -{Math.round((Number(v.originalPrice) - Number(v.price)) / Number(v.originalPrice) * 100)}{"% OFF (Customer saves Rs. "}{(Number(v.originalPrice) - Number(v.price)).toLocaleString()})</span> : <span className="text-gray-400 font-medium">No discount (Selling price ≥ Original price)</span>}</div></div><div className="sm:col-span-2"><label className="block text-xs font-bold text-gray-700 mb-1.5">Suitable Skin Types * (Matches Shop filters)</label><div className="flex flex-wrap gap-1.5 sm:gap-2 pt-1">{cc.map(p => {
                       const T = (v.skinType || []).includes(p);
                       return <button key={p} type="button" onClick={() => {
                         const M = v.skinType || [],
@@ -2753,9 +2753,9 @@ const cc = ["All Skin Types", "Oily Skin", "Dry Skin", "Combination Skin", "Sens
                           name: "",
                           category: p.id,
                           categoryLabel: p.name,
-                          price: 1499,
-                          originalPrice: 1899,
-                          discountPercentage: 20,
+                          price: 1250,
+                          originalPrice: 1699,
+                          discountPercentage: 26,
                           rating: 5,
                           reviewCount: 1,
                           shortDescription: "",
