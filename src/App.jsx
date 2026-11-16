@@ -1569,7 +1569,7 @@ I am browsing scrubiehub.pk and have questions regarding your skincare items.`)}
     badges: ["Trending", "Skin Brightening", "100% Organic"],
     isBestSeller: true,
     inStock: true,
-    images: ["/assets/products/body-scrubs/turmeric-scrub-banner.jpeg", "/assets/products/body-scrubs/turmeric-scrub-podium.jpeg", "/assets/products/body-scrubs/turmeric-scrub-satin.jpeg", "/assets/products/body-scrubs/turmeric-scrub-collage.jpeg"],
+    images: ["/assets/products/body-scrubs/turmeric-scrub-banner.jpeg", "/assets/products/body-scrubs/turmeric-scrub-podium.jpeg", "/assets/products/body-scrubs/turmeric-scrub-collage.jpeg"],
     weightOrVolume: "250g / 8.8 oz"
   }, {
     id: "scrub-nila-03",
