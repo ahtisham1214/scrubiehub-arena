@@ -3062,44 +3062,148 @@ Message: ${t.message}`), $n(g);
                 className: "w-4 h-4"
               })}</button></div></div></section></div>;
   },
-  uh = ({
-    onShopClick: e
-  }) => {
-    const [t, r] = F.useState(50),
-      [s, l] = F.useState(false),
-      a = F.useRef(null),
-      i = F.useCallback(g => {
-        if (!a.current) return;
-        const b = a.current.getBoundingClientRect(),
-          y = g - b.left,
-          j = Math.max(5, Math.min(95, y / b.width * 100));
-        r(j);
-      }, []),
-      o = F.useCallback(g => {
-        s && i(g.touches[0].clientX);
-      }, [s, i]),
-      c = F.useCallback(g => {
-        s && i(g.clientX);
-      }, [s, i]),
-      u = F.useCallback(() => {
-        l(false);
-      }, []);
-    return F.useEffect(() => (s && (window.addEventListener("mousemove", c), window.addEventListener("mouseup", u), window.addEventListener("touchmove", o), window.addEventListener("touchend", u)), () => {
-      window.removeEventListener("mousemove", c), window.removeEventListener("mouseup", u), window.removeEventListener("touchmove", o), window.removeEventListener("touchend", u);
-    }), [s, c, o, u]), <section className="py-16 sm:py-20 bg-gradient-to-b from-[#FAF7F5] via-[#FFFDFB] to-[#FAF7F5] border-y border-[#F0E6DF] overflow-hidden"><div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div className="text-center max-w-3xl mx-auto mb-12"><div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-100/70 text-brand-800 text-xs font-semibold uppercase tracking-wider mb-3">{n.jsx(ke, {
-              className: "w-3.5 h-3.5 text-brand-600"
-            })}<span>Visible Skin Transformation</span></div><h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2D1520] tracking-tight">See The Scrubie Glow Difference</h2><p className="mt-3 text-sm sm:text-base text-gray-600">Drag the interactive slider below to witness how our handcrafted organic scrubs buff away dullness and reveal silky, luminous skin in just one ritual.</p></div><div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center max-w-6xl mx-auto"><div className="lg:col-span-7"><div ref={a} onMouseDown={() => l(true)} onTouchStart={() => l(true)} className="relative w-full aspect-[4/3] sm:aspect-[16/11] rounded-2xl overflow-hidden shadow-2xl border-4 border-white cursor-ew-resize select-none bg-stone-900"><img src="/assets/before-after/after-face.jpg" alt="After: Radiant Dewy Glow" draggable={false} className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none select-none" /><div className="absolute bottom-4 right-4 z-10 bg-black/65 backdrop-blur-md text-white text-xs font-bold px-3 py-1.5 rounded-full border border-white/20 shadow-md flex items-center gap-1.5">{n.jsx(ke, {
-                  className: "w-3.5 h-3.5 text-amber-300"
-                })}<span>{"AFTER: Silky Dewy Glow & Hydrated"}</span></div><img src="/assets/before-after/before-face.jpg" alt={"Before: Dull Complexion & Dry Texture"} draggable={false} className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none select-none" style={{
-                clipPath: `inset(0 ${100 - t}% 0 0)`
-              }} /><div className="absolute bottom-4 left-4 z-10 bg-black/65 backdrop-blur-md text-white text-xs font-bold px-3 py-1.5 rounded-full border border-white/20 shadow-md whitespace-nowrap flex items-center gap-1.5 transition-opacity duration-200" style={{
-                opacity: t > 20 ? 1 : 0
-              }}><span>{"❄️ BEFORE: Dull & Dry Texture"}</span></div><div className="absolute top-0 bottom-0 w-1 bg-white shadow-[0_0_12px_rgba(0,0,0,0.6)] pointer-events-none z-20" style={{
-                left: `${t}%`
-              }}><div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-brand-700 text-white border-2 border-white shadow-xl flex items-center justify-center pointer-events-auto cursor-grab active:cursor-grabbing hover:scale-110 transition-transform"><Dx className="w-5 h-5 animate-pulse" /></div></div><div className="absolute top-3 left-1/2 -translate-x-1/2 z-20 bg-black/60 backdrop-blur-xs text-white text-[11px] font-medium px-3.5 py-1 rounded-full border border-white/15 pointer-events-none shadow-sm flex items-center gap-1"><span>↔ Drag to compare glow</span></div></div></div><div className="lg:col-span-5 space-y-6"><div className="bg-white rounded-2xl p-6 sm:p-7 border border-[#F2EAE4] shadow-sm space-y-5"><h3 className="font-serif text-xl font-bold text-[#2D1520]">Proven Real Customer Results</h3><p className="text-xs sm:text-sm text-gray-600 leading-relaxed">Based on a 4-week consumer perception study with 140+ Pakistani women using Scrubie-Hub body scrubs twice weekly:</p><div className="space-y-4 pt-1"><div className="flex items-start gap-3.5"><div className="w-8 h-8 rounded-full bg-pink-100 text-brand-700 flex items-center justify-center shrink-0 font-bold text-xs">97%</div><div><p className="text-xs sm:text-sm font-semibold text-gray-800">Reported Instant Softness</p><p className="text-xs text-gray-500">Felt rough dryness and dead skin vanish after the very first shower.</p></div></div><div className="flex items-start gap-3.5"><div className="w-8 h-8 rounded-full bg-pink-100 text-brand-700 flex items-center justify-center shrink-0 font-bold text-xs">92%</div><div><p className="text-xs sm:text-sm font-semibold text-gray-800">Visible Reduction in Strawberry Legs</p><p className="text-xs text-gray-500">Noticed visibly clearer pores and smoother skin along knees and shins.</p></div></div><div className="flex items-start gap-3.5"><div className="w-8 h-8 rounded-full bg-pink-100 text-brand-700 flex items-center justify-center shrink-0 font-bold text-xs">94%</div><div><p className="text-xs sm:text-sm font-semibold text-gray-800">Deep 24-Hour Hydration Lock</p><p className="text-xs text-gray-500">Natural botanical oils sealed in moisture without any greasy residue.</p></div></div></div><div className="pt-2"><button onClick={e} className="w-full py-3.5 px-6 bg-brand-600 hover:bg-brand-700 text-white rounded-xl text-xs sm:text-sm font-bold shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 group"><span>Experience The Transformation</span>{n.jsx(st, {
-                    className: "w-4 h-4 group-hover:translate-x-1 transition-transform"
-                  })}</button></div></div></div></div></div></section>;
-  };
+ uh = ({
+  onShopClick: e
+}) => {
+  const [t, r] = F.useState(50),
+    [s, l] = F.useState(false),
+    a = F.useRef(null),
+    i = F.useCallback(g => {
+      if (!a.current) return;
+      const b = a.current.getBoundingClientRect(),
+        y = g - b.left,
+        j = Math.max(5, Math.min(95, y / b.width * 100));
+      r(j);
+    }, []),
+    o = F.useCallback(g => {
+      s && i(g.touches[0].clientX);
+    }, [s, i]),
+    c = F.useCallback(g => {
+      s && i(g.clientX);
+    }, [s, i]),
+    u = F.useCallback(() => {
+      l(false);
+    }, []);
+
+  return F.useEffect(() => (s && (window.addEventListener("mousemove", c), window.addEventListener("mouseup", u), window.addEventListener("touchmove", o), window.addEventListener("touchend", u)), () => {
+    window.removeEventListener("mousemove", c), window.removeEventListener("mouseup", u), window.removeEventListener("touchmove", o), window.removeEventListener("touchend", u);
+  }), [s, c, o, u]), (
+    <section className="py-16 sm:py-20 bg-gradient-to-b from-[#FAF7F5] via-[#FFFDFB] to-[#FAF7F5] border-y border-[#F0E6DF] overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-100/70 text-brand-800 text-xs font-semibold uppercase tracking-wider mb-3">
+            {n.jsx(ke, { className: "w-3.5 h-3.5 text-brand-600" })}
+            <span>Visible Skin Transformation</span>
+          </div>
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2D1520] tracking-tight">
+            See The Scrubie Glow Difference
+          </h2>
+          <p className="mt-3 text-sm sm:text-base text-gray-600">
+            Drag the interactive slider below to witness how our handcrafted organic scrubs buff away dullness and reveal silky, luminous skin in just one ritual.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center max-w-6xl mx-auto">
+          <div className="lg:col-span-7">
+            <div
+              ref={a}
+              onMouseDown={() => l(true)}
+              onTouchStart={() => l(true)}
+              className="relative w-full aspect-[4/3] sm:aspect-[16/11] rounded-2xl overflow-hidden shadow-2xl border-4 border-white cursor-ew-resize select-none bg-stone-900"
+            >
+              {/* Base Image (Right Side): BEFORE */}
+              <img
+                src="/assets/before-after/before-face.jpg"
+                alt="Before: Dull Complexion & Dry Texture"
+                draggable={false}
+                className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none select-none"
+              />
+              <div
+                className="absolute bottom-4 right-4 z-10 bg-black/65 backdrop-blur-md text-white text-xs font-bold px-3 py-1.5 rounded-full border border-white/20 shadow-md whitespace-nowrap flex items-center gap-1.5 transition-opacity duration-200"
+                style={{ opacity: t < 80 ? 1 : 0 }}
+              >
+                <span>{"❄️ BEFORE: Dull & Dry Texture"}</span>
+              </div>
+
+              {/* Clipped Foreground Image (Reveals Left-to-Right): AFTER */}
+              <img
+                src="/assets/before-after/after-face.jpg"
+                alt="After: Radiant Dewy Glow"
+                draggable={false}
+                className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none select-none"
+                style={{
+                  clipPath: `inset(0 ${100 - t}% 0 0)`
+                }}
+              />
+              <div
+                className="absolute bottom-4 left-4 z-10 bg-black/65 backdrop-blur-md text-white text-xs font-bold px-3 py-1.5 rounded-full border border-white/20 shadow-md whitespace-nowrap flex items-center gap-1.5 transition-opacity duration-200"
+                style={{ opacity: t > 20 ? 1 : 0 }}
+              >
+                {n.jsx(ke, { className: "w-3.5 h-3.5 text-amber-300" })}
+                <span>{"AFTER: Silky Dewy Glow & Hydrated"}</span>
+              </div>
+
+              {/* Slider Handle */}
+              <div
+                className="absolute top-0 bottom-0 w-1 bg-white shadow-[0_0_12px_rgba(0,0,0,0.6)] pointer-events-none z-20"
+                style={{ left: `${t}%` }}
+              >
+                <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-brand-700 text-white border-2 border-white shadow-xl flex items-center justify-center pointer-events-auto cursor-grab active:cursor-grabbing hover:scale-110 transition-transform">
+                  <Dx className="w-5 h-5 animate-pulse" />
+                </div>
+              </div>
+
+              <div className="absolute top-3 left-1/2 -translate-x-1/2 z-20 bg-black/60 backdrop-blur-xs text-white text-[11px] font-medium px-3.5 py-1 rounded-full border border-white/15 pointer-events-none shadow-sm flex items-center gap-1">
+                <span>↔ Drag to compare glow</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="lg:col-span-5 space-y-6">
+            <div className="bg-white rounded-2xl p-6 sm:p-7 border border-[#F2EAE4] shadow-sm space-y-5">
+              <h3 className="font-serif text-xl font-bold text-[#2D1520]">Proven Real Customer Results</h3>
+              <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                Based on a 4-week consumer perception study with 140+ Pakistani women using Scrubie-Hub body scrubs twice weekly:
+              </p>
+              <div className="space-y-4 pt-1">
+                <div className="flex items-start gap-3.5">
+                  <div className="w-8 h-8 rounded-full bg-pink-100 text-brand-700 flex items-center justify-center shrink-0 font-bold text-xs">97%</div>
+                  <div>
+                    <p className="text-xs sm:text-sm font-semibold text-gray-800">Reported Instant Softness</p>
+                    <p className="text-xs text-gray-500">Felt rough dryness and dead skin vanish after the very first shower.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3.5">
+                  <div className="w-8 h-8 rounded-full bg-pink-100 text-brand-700 flex items-center justify-center shrink-0 font-bold text-xs">92%</div>
+                  <div>
+                    <p className="text-xs sm:text-sm font-semibold text-gray-800">Visible Reduction in Strawberry Legs</p>
+                    <p className="text-xs text-gray-500">Noticed visibly clearer pores and smoother skin along knees and shins.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3.5">
+                  <div className="w-8 h-8 rounded-full bg-pink-100 text-brand-700 flex items-center justify-center shrink-0 font-bold text-xs">94%</div>
+                  <div>
+                    <p className="text-xs sm:text-sm font-semibold text-gray-800">Deep 24-Hour Hydration Lock</p>
+                    <p className="text-xs text-gray-500">Natural botanical oils sealed in moisture without any greasy residue.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="pt-2">
+                <button
+                  onClick={e}
+                  className="w-full py-3.5 px-6 bg-brand-600 hover:bg-brand-700 text-white rounded-xl text-xs sm:text-sm font-bold shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 group"
+                >
+                  <span>Experience The Transformation</span>
+                  {n.jsx(st, { className: "w-4 h-4 group-hover:translate-x-1 transition-transform" })}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 function App() {
   const [e, t] = F.useState("home"),
     [r, s] = F.useState("all"),
